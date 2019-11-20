@@ -5,9 +5,9 @@
 
 int ** Aloca(int lin, int col){
     ///Aloca dinamicamente o vetor de vértices
-    char **m = (char**)malloc(lin * sizeof(char*));
+    int **m = (int**)malloc(lin * sizeof(int*));
     for (int i = 0; i < lin; i++){
-        m[i] = (char*) malloc(col * sizeof(char));
+        m[i] = (int*) malloc(col * sizeof(int));
         for (int j = 0; j < col; j++){
             m[i][j] = 0;
         }

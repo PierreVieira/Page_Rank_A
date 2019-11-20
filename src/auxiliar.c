@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 
-char ** Aloca(int lin, int col){
+int ** Aloca(int lin, int col){
     ///Aloca dinamicamente o vetor de vértices
     char **m = (char**)malloc(lin * sizeof(char*));
     for (int i = 0; i < lin; i++){
